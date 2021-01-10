@@ -1,0 +1,80 @@
+.contact {
+  opacity: 0;
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-image: linear-gradient(
+    to bottom
+      (rgba($color-primary-darkest, 0.9), rgba($color-primary-darkest, 0.7))
+  );
+  z-index: 5;
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+  &_container {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(linen, 0.5),
+      rgb(107, 101, 94)
+    );
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 75%;
+    height: 75%;
+    background-color: $color-primary-light;
+    box-shadow: 0 2rem 3rem rgba($color-primary-darkest, 0.2);
+    border-radius: $default-border-radius;
+    box-shadow: $default-shadow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-size: $larger-font-size;
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.6rem;
+    }
+    &-close {
+      align-self: flex-end;
+      margin-right: 10rem;
+    }
+    &-title {
+      color: $color-white;
+      text-decoration: overline;
+      font-weight: 700;
+      font-size: larger;
+    }
+    .icon-bar {
+      display: flex;
+      align-content: space-between;
+      margin: 3rem;
+      background-color: black;
+      border-radius: $default-border-radius;
+      i {
+        display: flex;
+        justify-content: space-between;
+        &::before {
+          color: $color-white;
+          margin: 2rem;
+        }
+      }
+      .social {
+        padding: 0.3rem;
+        &:hover {
+          border-radius: $default-border-radius;
+          background-color: rgba($color-primary, 0.8);
+        }
+        &:visited {
+          text-decoration: none;
+        }
+      }
+    }
+    .mail {
+      margin: 1rem;
+      font-weight: 600;
+      box-shadow: $large-shadow;
+    }
+  }
+}

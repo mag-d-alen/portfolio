@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Portfolio</title>
+  </head>
+  <body class="grid-container">
+<!-- /section 1 home     -->
+  <section class="section1 home">
+      <header class="header">
+        <!-- later can relace it with image, mayb -->
+        <a href="index.html" class="logo">Magdalena</br> Ben-Bassat</br> Luszczynska</a>
+          <ul class="nav">
+            <li class="nav_item"><a href="#sectionLink2" class="nav_item_link">About Me</a></li>
+            <li class="nav_item"><a href="#sectionLink3" class="nav_item_link">Projects</a></li>
+            <li class="nav_item"> <a href="#popup" class="nav_item_link">Contact Me</a> </li>
+          </ul>        
+      </header>
+      <div class="hero">
+          <div class="hero_title">The Art of<br> Front End<br> Web Dev </div>
+      </div>
+</section>
+<!-- section 2 about -->
+
+ 
+      <div class="section2 about_left">
+        <h2 class="title-small">Hello,</h2>
+        <h2 class="title-small">I'm Magdalena</h2>
+        
+        <img class="about_left-img" src="images/me.gif" alt="magdalena">
+
+      </div>
+      <div class="about_right">
+        <p class="about_right-content" >
+          Hi, I'm Magdalena, a front-end developer, a JavaScript enhusiast and a React eager initiate, currently based in Tel Aviv, Israel. 
+        </p>
+        <p class="about_right-content" >
+          I started programming in mid-noughties, as an MA student in Digital Humanities at University College London. Back then, web aplications were build in JavaScript-HTML-CSS, with an SQL database, using PHP for the backend.<br> After finishing my degree, I did a PhD and a post-doc in early modern history. About two years ago, I rediscovered my passion for the Front End--and with ES6, NodeJS, Reach and Sass--what not to love!
+        </p>
+        <p class="about_right-content">
+          To keep up with the industry, I finished two intensive full-stack bootcamps (over eighty hours of coding!) and started developing my own small projects, some of which can be sampled below&darr;. I am looking for an oportunity to learn further and contribute to a team effort. I would love to hear from you :) 
+        </p>
+      </div>
+   
+
+
+    <!-- section projects -->
+    <section class="section3 projects">
+      <div class="projects_title title">My projects</div>
+      <div class="projects_container ">
+
+        <!--card 1  -->
+        <div class="card" id="1">
+          <h4 class="card_heading">TO DO List</h4>
+          <div class="card_text">An ExpressJS to-do list with MongoDB</div>
+          <div class="card_picture"><img class="card_picture-img" src="./images/todo.gif" alt="to-do demo"></div>
+          <button class="btn show-hidden">Read more</button>
+        </div>
+     
+        <!-- card2 -->
+        <div class="card" id="2">
+          <h4 class="card_heading">Catbook</h4>
+          <div class="card_text">A REACT app with hooks and an API call</div>
+          <div class="card_picture"><img class="card_picture-img" src="./images/catbook.gif" alt="catbook project demo"></div>
+          <button class="btn show-hidden">Read more</button>
+        </div>
+         
+    <!-- card3 -->
+        <div class="card" id="3">
+          <h4 class="card_heading">Voice Notes App</h4>
+          <div class="card_text">A REACT Voice recognition app</div>
+          <div class="card_picture"><img class="card_picture-img" src="./images/voiceNotes.gif" alt="voice notes demo"></div>
+          <button class=" btn show-hidden">Read more</button>
+        </div>
+
+     <!-- card4 -->
+        <div class="card" id="4">
+          <h4 class="card_heading">Portfolio</h4>
+          <div class="card_text">Scss + vanilla JS Portfolio</div>
+          <div class="card_picture"> <img class="card_picture-img" src="./images/porto.gif" alt=""></div>
+          <button class=" btn show-hidden">Read more</button>
+        </div>
+    </div>
+
+     
+           <!-- hidden info 1-->
+    <div class="info-container">
+      <div id ="1" class="hidden info info-card ">
+          <button class="x-btn info-close"> &times;</button>
+          <div class="info-details">
+                  This is a NodeJS express app. It uses a time and date API to display the current date as the title of the list. Items can be added and deleted. Additional functionality allows the user to create their own list with a custom title. I used a NoSQL database (MongoDB) to store the client data.<br>
+                  The app is styled with CSS (using media-query for mobile design) and fully resonsive. 
+                  <br><a href="https://ancient-fjord-52860.herokuapp.com/list" target="_blank">The app is hosted on Heroku and is currently live, so you are more than welcome to check it out. </a><br>
+                  <a href=" https://github.com/mag-d-alen/TODO-Express-ejs-mongoDB-.git" target="_blank"> The source code is available on Github.</a>
+                  
+                 
+          </div>
+      </div>
+    
+           <!-- hidden info2 -->
+      <div  id ="2" class="hidden info info-card ">
+            <button class=" x-btn info-close">&times;</button>
+            <div class="info-details">
+                The app was built to entertain my two cats, Shufi and Mi. <br>
+                It is built with React.js and features a search engine and profiles of cat friends whose are obtained from a REST API and added to profile components. <br>
+                It is styled with modern CSS with flexbox as an overall structure asnd fully responsive. <br>
+                <a href="#" target="_blank"> The code base is available on Github.</a>
+            </div>
+      </div>
+
+             <!-- hidden info 3-->
+      <div id = "3" class=" info hidden info-card ">
+              <button class="x-btn info-close">&times;</button>
+              <div class="info-details">
+                  Voice Notes is a ReactJS app built in ES6 with functional components and React hooks. It was built to try out the open-source speech recognition tool, Web Speech Api. <br>
+                  The recording begins when the user turns on the microphon, speech is converted to text and a note is created. The note can be then saved and later deleted. 
+                  The app is styled with modern CSS and fully responsive. <br>
+                   <a href=" 
+                  https://github.com/mag-d-alen/voice-transcript-notebook-app.git" target="_blank">The source code is available on Github.</a>
+              </div>
+      </div>
+         <!-- hidden info 4-->
+      <div id ="4" class="hidden info info-card ">
+          <button class="x-btn info-close">&times;</button>
+          <div class="info-details">
+                 This portfolio was built and designed by me from scratch. It is mostly HTML and SCSS with a little of vanilla JavaScript (ES6) to enhance user exerience (smooth scrolling and dynamic overlay). I used CSS grid for the layout and flexbox to style components. The design takes advantage of a number of CSS3 features such as gradients and box-shadows, as well as animations, variables, and nesting of the SCSS and uses 8bit images and gif demos of a few of my projects. <br><a href="#">The source code is available on Github.</a><br>
+                 Many thanks to Shufi and Mi for posing to photos and Eyal for QA. 
+                 
+          </div>
+        
+      </div>
+     </section>  
+ <footer class="footer">	Copyright &#169; Magdalena Ben-Bassat Luszczynska Tel-Aviv 2021.</footer>
+
+
+     <!-- contact me pop-up -->
+   <div  id="popup" class="contact">
+    <div class="contact_container">
+      <a href="#" class="x-btn contact_container-close"> &times;</a>
+        <div class="contact_container-title title-small">Let's get in touch!</div>
+          <p>Drop me an email at</p>
+          <div class="mail">magdalena.luszczynska AT mail.huji.ac.il</div>
+          <p>or find me on social media</p>
+        
+           <div class="icon-bar">
+              <a href="https://github.com/mag-d-alen?tab=repositories" target="_blank"class="social"><i class="fa fa-github"></i></a>
+              <a href="https://twitter.com/mag_bb_lus"  target="_blank" class="social"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/mag.dalena.73744801"  target="_blank" class="social"><i class="fa fa-facebook"></i></a>             
+            </div>      
+    </div> 
+  </div> 
+  </body>
+  <script src="index.js"></script>
+</html>
