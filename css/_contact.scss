@@ -33,8 +33,9 @@
     align-items: center;
     padding: 2rem;
     font-size: $larger-font-size;
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-xs) {
       font-size: 1.6rem;
+      height: fit-content;
     }
     &-close {
       align-self: flex-end;

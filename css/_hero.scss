@@ -1,0 +1,27 @@
+.hero {
+  background-color: rgba($color-primary-darkest, 0.5);
+  grid-column: 1/ -1;
+  grid-row: 3;
+  height: fit-content;
+  @media only screen and (max-width: $bp-small) {
+    height: 50%;
+  }
+  &_title {
+    text-transform: uppercase;
+    padding: 4rem 0 2rem 24rem;
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 2;
+    color: $color-white;
+    font-size: 4.5rem;
+    font-weight: 650;
+    &:hover {
+      color: $color-primary-darkest;
+    }
+    @media only screen and (max-width: $bp-small) {
+      padding: 3rem 0 3;
+    }
+    @media only screen and (max-width: $bp-xs) {
+      padding: 4rem 1rem 1rem 4rem;
+    }
+  }
+}

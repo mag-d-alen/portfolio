@@ -42,6 +42,7 @@
         max-width: fit-content;
         padding: 2.5rem;
       }
+
       @media only screen and (max-width: $bp-xs) {
         margin: 3rem 0;
       }
@@ -100,7 +101,6 @@
         width: 90%;
       }
       @media only screen and (max-width: $bp-small) {
-        margin: 0;
         width: 100%;
         padding: 2.5rem;
       }

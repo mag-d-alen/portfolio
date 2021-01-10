@@ -1,0 +1,61 @@
+.header {
+  grid-row: 1 / span 2;
+  grid-column: 1 / -1;
+  background-color: rgba($color-primary, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  min-height: fit-content;
+  .logo {
+    grid-column: 2 / span 1;
+    background-image: linear-gradient(
+      left,
+      $color-white,
+      $color-white 20%,
+      transparent 20%,
+      transparent
+    );
+    color: $color-black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem 2rem 0 2rem;
+    padding: 0 2rem 0 1rem;
+    max-width: 12rem;
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: $bp-xs) {
+      justify-content: flex-end;
+      margin: 2em 2rem 0 2rem;
+      padding: 0 2rem 0 1rem;
+      height: 10rem;
+    }
+  }
+  .nav {
+    //grid-column: 4 / span -1;
+    font-weight: 550;
+    display: flex;
+    //justify-content: space-between;
+    padding: 2rem;
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    &_item {
+      &_link {
+        padding: 1rem;
+        color: $color-white;
+        font-size: $default-font-size;
+        &:hover {
+          color: rgba($color-primary-dark, 0.8);
+        }
+        &:active {
+          color: $color-primary-dark;
+        }
+        @media only screen and (max-width: $bp-xs) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
